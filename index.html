@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Odd or Even Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Odd or Even</h1>
+    <p class="sub">Pick Odd or Even, then choose a number from 1 to 10.<br>
+      If the total of your number + the computer's number matches your pick, you win!</p>
+
+    <!-- Step 1: choose odd or even -->
+    <div class="row">
+      <button id="oddBtn" class="choice">Odd</button>
+      <button id="evenBtn" class="choice">Even</button>
+    </div>
+
+    <!-- Step 2: choose a number -->
+    <input type="number" id="numberInput" min="1" max="10" placeholder="Your number (1-10)">
+    <button id="playBtn" class="play">Play</button>
+
+    <!-- Results -->
+    <div id="result">
+      <p id="numbers"></p>
+      <p id="message"></p>
+    </div>
+
+    <div class="score">
+      <span>Wins: <strong id="wins">0</strong></span>
+      <span>Losses: <strong id="losses">0</strong></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
